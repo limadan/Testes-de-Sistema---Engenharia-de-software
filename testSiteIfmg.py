@@ -32,10 +32,10 @@ class TestSiteIfmg(unittest.TestCase):
         linkmeucpa.click()
 
         WebDriverWait(self.driver, 10).until(
-            EC.title_contains("Comissão Própria de Avaliação - CPA")
+            EC.title_contains("Vestibular IFMG")
         )
 
-        self.assertIn("Comissão Própria de Avaliação - CPA", self.driver.title)
+        self.assertIn("Vestibular IFMG", self.driver.title)
 
     def test_webmail(self):
         self.driver.get("https://www.ifmg.edu.br/sabara")
